@@ -28,6 +28,7 @@ Libsx (the Simple X library) is a library of code that sits on top of and
 autoreconf -f -i
 
 %build
+export CFLAGS="$CFLAGS -Wno-error=incompatible-pointer-types"
 #./bootstrap
 %configure
 
@@ -44,7 +45,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %files
 %{_includedir}/libsx.h
-%exclude %{_libdir}/libsx.la
 %{_libdir}/libsx.a
 %{_libdir}/libsx.so
 %{_libdir}/libsx.so.0
@@ -55,6 +55,8 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/libsx/dialogs.fr
 
 %changelog
+* Mon Mar 17 2025 Paolo Oliveri <paul@oliveri.info> 2.08-0
+- Rebuilt for RHEL 10
 * Thu Nov 16 2023 Paolo Oliveri <paul@oliveri.info> 2.08-0
 - Rebuilt for RHEL 8
 * Fri Oct 6 2023 Paolo Oliveri <paul@oliveri.info> 2.08-0
