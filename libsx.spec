@@ -55,6 +55,8 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/libsx/dialogs.fr
 
 %changelog
+* Mon May 26 2025 Paolo Oliveri <paul@oliveri.info> 2.08-0
+- Rebuilt for Fedora 42
 * Mon Mar 17 2025 Paolo Oliveri <paul@oliveri.info> 2.08-0
 - Rebuilt for RHEL 10
 * Thu Nov 16 2023 Paolo Oliveri <paul@oliveri.info> 2.08-0
