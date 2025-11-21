@@ -1,6 +1,6 @@
 Addenda Paolo Oliveri, 20251121
 
-Git repository to build rpm for libsx with tagged version for [GrADS](https://github.com/paolo-oliveri/GrADS).
+Git repository to build rpm for libsx for GrADS (https://github.com/paolo-oliveri/GrADS).
 
 Please use RPM tools to build and install the package for RHEL Linux Distributions.
 
