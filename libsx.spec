@@ -55,5 +55,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/libsx/dialogs.fr
 
 %changelog
+* Thu Nov 16 2023 Paolo Oliveri <paul@oliveri.info> 2.08-0
+- Rebuilt for RHEL 8
 * Fri Oct 6 2023 Paolo Oliveri <paul@oliveri.info> 2.08-0
 - Built for RHEL 9
