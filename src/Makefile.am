@@ -18,3 +18,7 @@ all-local: libsx.a
 
 libsx.a: .libs/libsx.a
 	$(LN_S) $< libsx.a
+
+BUILT_SOURCES = libsx.h
+libsx.h: libsx.h.in
+		$(AM_V_GEN)sed -e 's|__SX_SHAREDIR__|$(SX_SHAREDIR)|g' $< > $@

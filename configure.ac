@@ -63,5 +63,7 @@ case $host_os in
     ;;
 esac
 
+AC_SUBST([SX_SHAREDIR], "$datarootdir/libsx")
+
 AC_OUTPUT
 
